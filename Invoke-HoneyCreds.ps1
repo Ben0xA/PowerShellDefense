@@ -1,4 +1,4 @@
-function Invoke-Ignorer {
+function Invoke-HoneyCreds {
 	[CmdletBinding()]
 	Param()
 
