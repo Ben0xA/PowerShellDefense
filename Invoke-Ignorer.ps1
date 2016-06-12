@@ -8,7 +8,7 @@ function Invoke-Ignorer {
 		public static extern bool LogonUser(string lpszUsername, string lpszDomain, string lpszPassword, int dwLogonType, int dwLogonProvider, ref IntPtr phToken);
 "@ -passthru
 
-	# Get Credentals. Use \DOMAIN\User for username
+	# Get Credentals. Use DOMAIN\User for username
 	$creds = Get-Credential
 	$user = $($creds.GetNetworkCredential().UserName)
 	$password = $($creds.GetNetworkCredential().Password)
